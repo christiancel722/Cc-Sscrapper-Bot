@@ -37,8 +37,8 @@ import re
 import telethon
 from sys import argv
 from prettytable import PrettyTable
-api_id = 1111111111 # YOUR API ID FROM my.telegram.org
-api_hash = 'xxxxxxxxxxxxxxxx' # API HASH FROM my.telegram.org
+api_id = 9640677 # YOUR API ID FROM my.telegram.org
+api_hash = 'df02c2740159f8ade796bbea582d54c7' # API HASH FROM my.telegram.org
 def lista(dets):
     dets = str(dets)
     arrays = re.findall(r'[0-9]+', dets)
@@ -68,7 +68,7 @@ with client:
             req = requests.Session()
             f = open('xenscrape.txt', 'r')
             rd = int(f.read())
-            channelList = ["https://t.me/XenScrape","https://t.me/CCXEN"] # FOR MORE CHANNEL LINKS VISIT @XENCCLIST
+            channelList = ["https://t.me/XenScrape","https://t.me/CCXEN","https://t.me/Mooncrk","https://t.me/Carteldotxcc","https://t.me/Ezy_accounts","https://t.me/Teamcarderss"] # FOR MORE CHANNEL LINKS VISIT @XENCCLIST
             fornum = len(channelList)
             for i in range(0,fornum):
                 message = client.iter_messages(channelList[i],min_id=rd,wait_time=5)
@@ -123,7 +123,7 @@ with client:
 {lista} - {binBank} - {binEmoji} 
 SCRAPPER BY @AFN4NX"""
 
-                        client2.send_message(-10011111111111, respo,parse_mode='html') # CHANNEL ID FOR POST CC
+                        client2.send_message(-6202445592:AAE8wkni5BSwMgCNsnn3Au17duUBlyvHQV0, respo,parse_mode='html') # CHANNEL ID FOR POST CC
                 wd = XenScrape(message.id)
         except errors.FloodWaitError as e:
             print('Have to sleep', e.seconds, 'seconds')
