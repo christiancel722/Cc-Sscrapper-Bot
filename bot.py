@@ -123,7 +123,7 @@ with client:
 {lista} - {binBank} - {binEmoji} 
 SCRAPPER BY @AFN4NX"""
 
-                        client2.send_message(-6202445592:AAE8wkni5BSwMgCNsnn3Au17duUBlyvHQV0, respo,parse_mode='html') # CHANNEL ID FOR POST CC
+                        client2.send_message(-1827737758, respo,parse_mode='html') # CHANNEL ID FOR POST CC
                 wd = XenScrape(message.id)
         except errors.FloodWaitError as e:
             print('Have to sleep', e.seconds, 'seconds')
